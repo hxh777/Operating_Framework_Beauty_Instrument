@@ -1,0 +1,27 @@
+--cpu Cortex-M3
+"04stepmotor\startup_stm32f103xe.o"
+"04stepmotor\main.o"
+"04stepmotor\gpio.o"
+"04stepmotor\tim.o"
+"04stepmotor\usart.o"
+"04stepmotor\stm32f1xx_it.o"
+"04stepmotor\stm32f1xx_hal_msp.o"
+"04stepmotor\stm32f1xx_hal_gpio_ex.o"
+"04stepmotor\stm32f1xx_hal_tim.o"
+"04stepmotor\stm32f1xx_hal_tim_ex.o"
+"04stepmotor\stm32f1xx_hal.o"
+"04stepmotor\stm32f1xx_hal_rcc.o"
+"04stepmotor\stm32f1xx_hal_rcc_ex.o"
+"04stepmotor\stm32f1xx_hal_gpio.o"
+"04stepmotor\stm32f1xx_hal_dma.o"
+"04stepmotor\stm32f1xx_hal_cortex.o"
+"04stepmotor\stm32f1xx_hal_pwr.o"
+"04stepmotor\stm32f1xx_hal_flash.o"
+"04stepmotor\stm32f1xx_hal_flash_ex.o"
+"04stepmotor\stm32f1xx_hal_exti.o"
+"04stepmotor\stm32f1xx_hal_uart.o"
+"04stepmotor\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "04stepmotor\04stepmotor.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "04stepmotor.map" -o 04stepmotor\04stepmotor.axf
